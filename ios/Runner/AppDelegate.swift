@@ -93,7 +93,7 @@ struct Constants {
                 }
                
             }
-            print("___________ddddddddd___________ \(card)")
+            print("______________________ \(card)")
 
         } onError: { error in
             print("___________Error___________ \(card)")

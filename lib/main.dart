@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
       });
     }).catchError((err) {
       if (kDebugMode) {
-        print("pay ssssssssssssssss -=-=-=-=> $err");
+        print("pay  -=-=-=-=> $err");
       }
     });
   }

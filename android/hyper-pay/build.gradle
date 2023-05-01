@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+}
+
+android {
+    namespace 'com.app.hyperpay'
+    compileSdk 32
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+        multiDexEnabled true
+        signingConfig signingConfigs.debug
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+
+
+    /*sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }*/
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+//    implementation files("/libs/oppwa.mobile-2.56.0.aar")
+//    implementation(name: 'oppwa.mobile-2.56.0', ext: 'aar')
+//    implementation fileTree(dir:'libs', include:['*.jar', '*.aar'])
+
+
+//    implementation (files("libs/oppwa.mobile-2.56.0.aar"))
+
+    //implementation(files("../libs/oppwa.mobile-2.56.0.aar"))
+//    implementation(name: 'oppwa.mobile-2.56.0', ext: 'aar')
+
+    implementation project(":acceptsdk-release (2)")
+    implementation 'androidx.core:core-ktx:1.7.0'
+
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation 'com.google.android.material:material:1.6.1'//
+    implementation "androidx.browser:browser:1.4.0"
+    implementation "androidx.fragment:fragment:1.5.3"
+    implementation 'com.google.android.gms:play-services-wallet:19.1.0'
+    implementation "com.google.android.gms:play-services-base:18.1.0"
+
+    implementation 'androidx.appcompat:appcompat:1.5.1'//
+
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:customtabs:28.0.0'
+//    implementation project(path: ':app')
+}

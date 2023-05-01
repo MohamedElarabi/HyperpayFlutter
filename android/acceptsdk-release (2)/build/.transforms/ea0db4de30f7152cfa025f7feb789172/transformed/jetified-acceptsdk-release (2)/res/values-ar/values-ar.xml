@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Card_Number_check">  رقم البطاقة يجب أن يتكون من ١٦ رقمًا! </string>
+    <string name="Cvv_check"> يجب أن يتكون رمز ألامان من ٣ أرقام </string>
+    <string name="Date_check">   تاريخ غير صالح! </string>
+    <string name="Empty_name_check"> لا يمكن أن يكون الاسم فارغًا </string>
+    <string name="Expiration"> تاريخ الانتهاء </string>
+    <string name="PoweredBy">بواسطة</string>
+    <string name="app_id">app_id</string>
+    <string name="app_name">AcceptSDK</string>
+    <string name="card_holder_name"> إسم صاحب البطاقة </string>
+    <string name="card_info">بيانات البطاقة</string>
+    <string name="card_number"> رقم البطاقة </string>
+    <string name="cvv"> رمز ألامان </string>
+    <string name="pay_button"> حفظ الكارت </string>
+    <string name="pref_file_name">shared_pref</string>
+    <string name="processing">جارى الدفع...</string>
+    <string name="save_card"> سيتم حفظ هذه البطاقة لاستخدامها في المستقبل </string>
+    <string name="wait">برجاء الانتظار...</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="colorAccent">#CC0bd796</color>
+    <color name="colorDefaultButton">#CC0bd796</color>
+    <color name="colorHint">#96b1bc</color>
+    <color name="colorPrimary">@color/colorPrimaryDark</color>
+    <color name="colorPrimaryDark" ns1:ignore="ResourceCycle">@color/colorPrimaryDark</color>
+    <color name="colorText">#4F7283</color>
+    <dimen name="large_padding_value">20dp</dimen>
+    <dimen name="large_text_size">15sp</dimen>
+    <dimen name="normal_padding_value">15dp</dimen>
+    <dimen name="normal_text_size">14sp</dimen>
+    <dimen name="small_padding_value">10dp</dimen>
+    <dimen name="tiny_padding_value">5dp</dimen>
+    <string name="Card_Number_check"> Card Number must be 16 digits! </string>
+    <string name="Cvv_check">CVV must be 3 digits! </string>
+    <string name="Date_check">Invalid Date!</string>
+    <string name="Empty_name_check">Name can not be empty</string>
+    <string name="Expiration"> Expiry Date</string>
+    <string name="PoweredBy">Powered by </string>
+    <string name="app_id">app_id</string>
+    <string name="app_name">AcceptSDK</string>
+    <string name="card_holder_name"> Card Holder Name </string>
+    <string name="card_info">Card Information</string>
+    <string name="card_number"> Card Number</string>
+    <string name="cvv"> CVV </string>
+    <string name="pay_button"> Add Card </string>
+    <string name="pref_file_name">shared_pref</string>
+    <string name="processing">Processing payment...</string>
+    <string name="save_card"> This Card will be saved for future use </string>
+    <string name="wait">Please wait...</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

@@ -1,16 +1,22 @@
-# pay
+# HyperPay Fluttter
 
 A new Flutter project.
 
-## Getting Started
+# Simple use of our HyperPayDemo Ios
 
-This project is a starting point for a Flutter application.
+You will find getCheckoutId function in the next track
 
-A few resources to get you started if this is your first Flutter project:
+ios/AppDelegate.swift/getCheckoutId
+just change "Here your base url" to the main base url from backend
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Apple pay
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Make sure for genenrate merchant id froma apple developer then open the xcode 
+
+=> Go to Runner / Signing & Capabilities / Capability
+Choose Apple pay then add merchant id 
+
+
+
+
+

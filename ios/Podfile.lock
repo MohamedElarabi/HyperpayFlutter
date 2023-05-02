@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 2fb48e2e296f814d39edd589c5ae762824b0f3c4
+PODS:
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+
+PODFILE CHECKSUM: 4ccec035d0fc2dd278b51548f1c568a169d7a14c
 
 COCOAPODS: 1.12.1

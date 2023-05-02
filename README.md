@@ -1,4 +1,4 @@
-# pay
+# HyperPay Fluttter
 
 A new Flutter project.
 

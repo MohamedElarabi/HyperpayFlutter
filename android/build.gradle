@@ -4,7 +4,7 @@ buildscript {
         google()
         mavenCentral()
         jcenter()
-        mavenLocal()
+        google()
         maven { url 'https://jitpack.io' }
         maven { url 'https://maven.google.com' }
     }

@@ -130,7 +130,7 @@ struct Constants {
         
     }
     func getCheckoutId(paymentBrand: String, userId: String, amount: String, completionHandler: @escaping (_ checkoutID: String, _ usedPaymentBrand: String) -> (), onError: @escaping (String?) -> ()) {
-        let url = "url/\(paymentBrand)/\(userId)/\(amount)"
+        let url = "Here your base url/\(paymentBrand)/\(userId)/\(amount)"
         let merchantServerRequest = URLRequest(url: URL(string: url)!)
         print(url)
         URLSession.shared.dataTask(with: merchantServerRequest as URLRequest) { (data, response, error) in

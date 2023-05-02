@@ -28,14 +28,21 @@ class MainActivity :   FlutterActivity(),   OnPaymentResponseCallback {
                 res = result;
                 val amount: Double? = call.argument("amount")
                 val orderId: String? = call.argument("orderId")
+//
+//                PaymentHelper.Builder(this)
+//                startActivityForResult(mPayment
+//                    .paymentType(hashSetOf("VISA"))
+//                    .checkoutId("67ADED325FACB56C688A32F21F23B43E.uat01-vm-tx01")
+//                    .shopperResultUrl("com.app.hyperpayandroiddemo")
+//                    .testMode(true)
+//                    .build(this), PAYMENT_TYPE)
 
-                PaymentHelper.Builder(this)
-                startActivityForResult(mPayment
-                    .paymentType(hashSetOf("VISA"))
-                    .checkoutId("67ADED325FACB56C688A32F21F23B43E.uat01-vm-tx01")
-                    .shopperResultUrl("com.app.hyperpayandroiddemo")
-                    .testMode(true)
-                    .build(this), PAYMENT_TYPE)
+                    PaymentHelper.Builder(this, this)
+    .paymentType(hashSetOf("VISA", "MASTER"))
+    .checkoutId("67ADED325FACB56C688A32F21F23B43E.uat01-vm-tx01")
+    .shopperResultUrl("com.app.hyperpayandroiddemo")
+    .testMode(true)
+    .build()
 
 
 

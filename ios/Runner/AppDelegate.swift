@@ -130,11 +130,11 @@ struct Constants {
         
     }
     func getCheckoutId(paymentBrand: String, userId: String, amount: String, completionHandler: @escaping (_ checkoutID: String, _ usedPaymentBrand: String) -> (), onError: @escaping (String?) -> ()) {
-        let url = "Here your base url/\(paymentBrand)/\(userId)/\(amount)"
+        let url = "www.google.com/\(paymentBrand)/\(userId)/\(amount)"
         let merchantServerRequest = URLRequest(url: URL(string: url)!)
         print(url)
         URLSession.shared.dataTask(with: merchantServerRequest as URLRequest) { (data, response, error) in
-            print(JSON(data))
+//            print(JSON(data))
             if let data = data, let model = try? JSONDecoder.decodeFromData(PaymentCheckoutIdResonse.self, data: data) {
                 if let newCheckoutID = model.data?.res?.id {
                 completionHandler(newCheckoutID, paymentBrand)

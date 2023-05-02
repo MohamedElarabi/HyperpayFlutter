@@ -17,6 +17,12 @@ Make sure for genenrate merchant id from apple developer then open the xcode
 Choose Apple pay then add merchant id 
 
 
+# Simple use of our HyperPayDemo android
+
+Currently you can get getCheckoutId first after calling payment sdk then you will
+parsing data to native code 
 
 
+# Payment Method 
+MADA - VISA -MASTERCARD - APPLEPAY
 

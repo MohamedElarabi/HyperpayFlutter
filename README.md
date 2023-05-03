@@ -24,5 +24,8 @@ parsing data to native code
 
 
 # Payment Method 
-MADA - VISA -MASTERCARD - APPLEPAY
+MADA - VISA - MASTERCARD - APPLEPAY - STC
+
+# Checkout id test
+url === > https://dev.hyperpay.com/hyperpay-demo/getcheckoutid.php
 
